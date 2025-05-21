@@ -1,0 +1,221 @@
+/* === HEADER === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 20px 10%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo span {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+/* === SECTION DE DON === */
+.payment-section {
+  padding: 60px 10%;
+  background: #f9f9f9;
+  animation: slideDown 1s ease forwards;
+}
+
+.payment-section h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.payment-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.payment-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.payment-form input,
+.payment-form select,
+.payment-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  resize: none;
+}
+
+.payment-form button {
+  background-color: #0056b3;
+  color: white;
+  padding: 14px;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.payment-form button:hover {
+  background-color: #004299;
+}
+
+/* === FOOTER === */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  background-color: #222;
+  color: white;
+  padding: 40px 10%;
+  align-items: flex-start;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-left img {
+  height: 50px;
+}
+
+.footer-left span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-center form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-center input,
+.footer-center textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.footer-center button {
+  padding: 10px;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer-right h4 {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.social-icons img {
+  height: 30px;
+  width: 30px;
+}
+
+/* === ANIMATIONS === */
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo span {
+    font-size: 18px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-center form,
+  .footer-right {
+    width: 100%;
+  }
+
+  .footer-center input,
+  .footer-center textarea {
+    width: 100%;
+  }
+}
+
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .payment-form {
+    padding: 20px;
+  }
+
+  .footer-center form {
+    align-items: center;
+  }
+
+  .footer-left, .footer-right {
+    text-align: center;
+  }
+}

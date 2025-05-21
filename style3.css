@@ -1,0 +1,192 @@
+/* === HEADER === */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 5%;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* === SECTION DE PAIEMENT === */
+.payment-section {
+  padding: 60px 10%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+.payment-section h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #222;
+  animation: slideUp 1s ease forwards;
+  opacity: 0;
+}
+
+.payment-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: slideUp 1s ease 0.3s forwards;
+  opacity: 0;
+}
+
+.payment-form label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.payment-form input,
+.payment-form select,
+.payment-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+}
+
+.payment-form button {
+  padding: 14px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.payment-form button:hover {
+  background-color: #1e8f4e;
+}
+
+/* === FOOTER === */
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #222;
+  color: #fff;
+  padding: 40px 5%;
+  gap: 30px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-left img {
+  height: 50px;
+}
+
+.footer-left span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-center form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-center input,
+.footer-center textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.footer-center button {
+  padding: 10px;
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.footer-right h4 {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.social-icons img {
+  height: 30px;
+  width: 30px;
+}
+
+/* === ANIMATIONS === */
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo span {
+    font-size: 18px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-center form,
+  .footer-right {
+    width: 100%;
+  }
+
+  .footer-center input,
+  .footer-center textarea {
+    width: 100%;
+  }
+}
