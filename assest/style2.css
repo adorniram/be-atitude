@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -29,58 +35,82 @@ body {
   color: #2c3e50;
 }
 
-/* Page actualités */
-.actualites-page {
-  padding: 60px 10%;
-  background-color: #f9f9f9;
-}
-
-.page-title {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 50px;
-  color: #333;
-}
-
-.actualite {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
-  gap: 40px;
-}
-
-.actualite .texte {
-  flex: 1;
-  min-width: 300px;
-}
-
-.actualite .texte h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.actualite .texte p {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.6;
-}
-
-.actualite .image {
-  flex: 1;
-  min-width: 300px;
-  text-align: center;
-}
-
-.actualite .image img {
+section {
+  font-family: Arial, sans-serif;
   width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: 0;
+  border: 2px solid #ccc;
+  background-color: #d0efd1;
+  box-sizing: border-box; /* pour inclure le padding dans la largeur */
+  padding: 20px; /* si tu veux de l’espace intérieur */
 }
+
+
+.info-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* Pas de margin-left : collé à gauche */
+  flex-wrap: wrap;
+}
+
+
+.info-image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.title-box {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.info-title {
+  margin: 0;
+  font-size: 22px;
+  color: #449e44;
+}
+
+.info-description {
+  font-size: 16px;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .info-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .info-content {
+    width: 100%;
+  }
+}
+
 
 /* Animations */
 .slide-left {
