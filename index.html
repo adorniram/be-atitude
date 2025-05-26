@@ -6,36 +6,56 @@
   <title>Menu Principal</title>
   <link rel="shortcut icon" href="/images/logo église Méthodiste.png" type="image/x-icon">
   <link rel="stylesheet" href="/assest/style.css" />
+  <script src="images/script.js"></script>
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo slide-left">
-      <img src="/images/Logo église Méthodiste.png" alt="Logo du site" />
-       <span class="logo-title">Temple Les Béatitudes de Niangon Nord</span>
-    </div>
-    <nav class="menu slide-right">
-      <ul class="menu-list">
-        <li><a href="#">Accueil</a></li>
+ <!-- Header -->
+<header class="navbar">
+  <div class="logo slide-left">
+    <img src="/images/Logo église Méthodiste.png" alt="Logo du site" />
+    <span class="logo-title">Temple Les Béatitudes de Niangon Nord</span>
+  </div>
 
-        <li class="has-submenu">
-          <a href="#">Actualités</a>
-          <ul class="submenu">
-            <li><a href="local.html">Église locale</a></li>
-            <li><a href="circuit.html">Circuit</a></li>
-            <li><a href="district.html">District</a></li>
-            <li><a href="nationale.html">Nationale</a></li>
-          </ul>
-        </li>
+  <!-- Bouton hamburger (mobile uniquement) -->
+  <button
+    type="button"
+    class="menu-toggle a-bottom-bar-link a-bottom-bar-link--active"
+    id="menu-toggle"
+    aria-label="Ouvrir le menu"
+    aria-expanded="false"
+    aria-controls="site-nav-menu"
+    tabindex="0"
+    data-nav-button-id="site-nav-menu"
+    data-allow-active="false"
+    data-site-nav-button=""
+  >
+    <span class="a-site-nav-link--wrapper">
+      <span class="o-header__site-nav-label a-hover-content" data-hover-label="Menu">☰</span>
+    </span>
+  </button>
 
-        <li><a href="#">A propos </a></li>
+  <!-- Menu de navigation -->
+  <nav class="menu slide-right" id="site-nav-menu">
+    <ul class="menu-list" id="nav-list">
+      <li><a href="#">Accueil</a></li>
 
-        <li class="has-submenu">
-          <a href="payement.html">Paiement</a></li>
+      <li class="has-submenu">
+        <a href="#">Actualités</a>
+        <ul class="submenu">
+          <li><a href="local.html">Église locale</a></li>
+          <li><a href="circuit.html">Circuit</a></li>
+          <li><a href="district.html">District</a></li>
+          <li><a href="nationale.html">Nationale</a></li>
+        </ul>
+      </li>
 
-        <li><a href="don.html"><button class="don-btn">Faire un don</button></a></li>
-      </ul>
-    </nav>
-  </header>
+      <li><a href="#">À propos</a></li>
+      <li><a href="payement.html">Paiement</a></li>
+      <li><a href="don.html"><button class="don-btn">Faire un don</button></a></li>
+    </ul>
+  </nav>
+</header>
+
 
   <section class="presentation">
   <div class="text-content slide-right">

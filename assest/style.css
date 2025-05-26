@@ -16,15 +16,16 @@ body {
 }
 
 /* NAVBAR */
-.navbar {
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
   background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  position: relative;
-  z-index: 10;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   flex-wrap: wrap;
 }
 
@@ -165,7 +166,7 @@ body {
 /* RESPONSIVE - TABLETTE & MOBILE */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
     padding: 20px;
   }
@@ -701,3 +702,53 @@ body {
     align-items: center;
   }
 }
+
+/* Par défaut (desktop) */
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Bouton hamburger caché par défaut */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+}
+
+/* Responsive (mobile ≤ 768px) */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    margin-left: auto; /* place le bouton à droite */
+  }
+
+  .menu {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .menu-list {
+    display: none; /* caché par défaut */
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .menu-list.show {
+    display: flex; /* affiché quand la classe "show" est ajoutée par JS */
+  }
+
+  .submenu {
+    padding-left: 20px;
+  }
+}
+
