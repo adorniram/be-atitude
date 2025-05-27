@@ -204,6 +204,24 @@ header {
   }
 }
 
+.temple-section {
+  width: 100%;
+  height: 400px; /* Hauteur de la section (modifiable) */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Aligne le contenu à droite */
+  padding-right: 40px;
+}
+
+.temple-section h1 {
+  color: white;
+  font-size: 2.5rem;
+  background-color: transparent; /* Optionnel : lisibilité sur l’image */
+  padding: 10px 20px;
+  border-radius: 8px;
+}
 
 
 /* SECTION DE PRÉSENTATION */
