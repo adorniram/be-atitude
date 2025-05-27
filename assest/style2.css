@@ -40,7 +40,7 @@ section {
   width: 100%;
   margin: 0;
   border: 2px solid #ccc;
-  background-color: #d0efd1;
+  background-color: #f4f4f4;
   box-sizing: border-box; /* pour inclure le padding dans la largeur */
   padding: 20px; /* si tu veux de l’espace intérieur */
 }
