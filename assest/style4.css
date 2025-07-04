@@ -81,6 +81,60 @@
   background-color: #004299;
 }
 
+/* === SECTION D'INSCRIPTION === */
+.inscription-section {
+  padding: 60px 10%;
+  background: #f9f9f9;
+  animation: slideDown 1s ease forwards;
+}
+
+.inscription-section h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.inscription-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inscription-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.inscription-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.inscription-form button {
+  background-color: #0056b3;
+  color: white;
+  padding: 14px;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inscription-form button:hover {
+  background-color: #004299;
+}
+
 /* === FOOTER === */
 .footer {
   display: flex;
